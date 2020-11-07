@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container-fluid">
+            <header>
+                <h1>Sudoku</h1>
+                <div id="setup-game">
+                    <div id="diff">
+                        <h5>Choose difficulty:</h5>
+                        <label for="easy">Easy</label> <input type="radio" name="diff" id="easy" checked>
+                        <label for="medium">Medium</label> <input type="radio" name="diff" id="medium">
+                        <label for="hard">Hard</label> <input type="radio" name="diff" id="hard">
+                    </div>
+                    <div id="time">
+                        <h5>Choose time: </h5>
+                        <label for="time-3">3min</label> <input type="radio" name="time" id="time-3" checked>
+                        <label for="time-5">5 min</label><input type="radio" name="time" id="time-5">
+                        <label for="time-10">10 min</label><input type="radio" name="time" id="time-10">
+                    </div>
+                    <div id="theme">
+                        <h5>Choose theme:</h5>
+                        <label for="light">Light</label> <input type="radio" name="theme" id="light" checked>
+                        <label for="dark">Dark</label> <input type="radio" name="theme" id="dark">
+                    </div>
+                </div>
+                <button id="start-btn" class="btn btn-sm btn-outline-info">Lets play Sudoku !</button>
+            </header>
+            <div id="stats">
+                <div id="timer"></div>
+                <div id="lives"></div>
+            </div>
+            <div id="game">
+                <div id="board">
+                </div>
+                <div id="number-container" class="hidden">
+                    <p id="one">1</p>
+                    <p id="two">2</p>
+                    <p id="three">3</p>
+                    <p id="four">4</p>
+                    <p id="five">5</p>
+                    <p id="six">6</p>
+                    <p id="seven">7</p>
+                    <p id="eight">8</p>
+                    <p id="nine">9</p>
+                </div>
+            </div>
+            <footer>
+                <p> Made by M.Armus</p>
+            </footer>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

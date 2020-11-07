@@ -1,0 +1,121 @@
+* {
+  font-family: "Architects Daughter", cursive;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.dark {
+  background-color: #333333;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 4vh;
+  border-bottom: teal solid 0.09vh;
+  background-color: rgba(211, 211, 211, 0.47);
+}
+header h1 {
+  font-size: 2.5rem;
+  color: teal;
+  border-bottom: teal 1px solid;
+}
+#diff, #theme, #time{
+    border-top: 4px solid lightskyblue ;
+    border-left: 1px solid lightskyblue ;
+    border-radius: 20%;
+    padding: 1.1vw;
+  
+}
+
+#setup-game {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1.5vh;
+  
+}
+
+
+button {
+  justify-self: center;
+}
+#stats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+#timer,
+#lives {
+  font-size: 1.5rem;
+  text-align: center; 
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+}
+
+#number-container > p {
+  border: 2px solid lightblue;
+  border-radius: 20%;
+  width: 4.5vw;
+  height: 4.5vh;
+  font-size: 1.5rem;
+  margin-top: 0.1vh;
+  margin-left: 6vw; 
+  text-align: center;
+  
+  justify-content: center;
+}
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  width: 54vw;
+  height: 54vh;
+  overflow: hidden;
+}
+.tile {
+  border: 1px solid rgb(157, 151, 151);
+  width: 6vw;
+  height: 6vh;
+  text-align: center;
+  margin: 0px;
+  vertical-align: middle;
+  font-size: 30pt;
+}
+p.selected{
+    background-color: rgb(100, 237, 143);
+
+}
+p.incorrect{
+    color: crimson;
+}
+
+.rightBorder{
+    border-right: 2px dotted rgb(59, 102, 129);
+}
+.bottomBorder{
+    border-bottom: 2px dotted  rgb(59, 102, 129);
+}
+
+footer{ 
+    background-color: lightgray; 
+    text-align: center;
+    min-height: 5vh;
+  
+}
+footer > p {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  
+}
+
